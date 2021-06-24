@@ -1,0 +1,2 @@
+rootProject.name = "Litor"
+include ':app'
