@@ -9,6 +9,8 @@ import android.os.Message
 import android.provider.MediaStore
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import com.google.android.gms.tasks.OnFailureListener
 import com.google.android.gms.tasks.OnSuccessListener
@@ -52,7 +54,8 @@ class MainActivity : AppCompatActivity() {
         if(requestCode == REQUEST_IMAGE_CAPTURE && resultCode == Activity.RESULT_OK){
             val extras = data!!.extras
             imageBitmap = extras!!.get("data") as Bitmap
-            imageView!!.setImageBitmap(imageBitmap)
+            val imgView = findViewById<ImageView>(R.id.imageView)
+            imgView!!.setImageBitmap(imageBitmap)
         }
     }
 
@@ -76,6 +79,7 @@ class MainActivity : AppCompatActivity() {
         }
         for(block in text.textBlocks){
             val txt = block.getText()
+            val txtView = findViewById<TextView>(R.id.txtView)
             txtView!!.textSize = 16f
             txtView!!.setText(txt)
         }
@@ -84,7 +88,6 @@ class MainActivity : AppCompatActivity() {
     private fun showToast(message: String){
         Toast.makeText(
             baseContext, message, Toast.LENGTH_SHORT).show()
-        )
     }
 
 }
