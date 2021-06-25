@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "419071664781",
+    "project_id": "litor-87205",
+    "storage_bucket": "litor-87205.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419071664781:android:81ef6f0b56a2ef7f06f8c4",
+        "android_client_info": {
+          "package_name": "com.example.litor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "419071664781-a75e4ask6dc2cqihs7ir2q3ogav5ghne.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.litor",
+            "certificate_hash": "976af6a5bcb49eeff57be3a2458f758aefbd61ce"
+          }
+        },
+        {
+          "client_id": "419071664781-rsneqt6ovvm45ia8fvdme0tvgb9qbt73.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK3SZ9haodyWDqzDNLlamLrlbbY5vtjfs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419071664781-rsneqt6ovvm45ia8fvdme0tvgb9qbt73.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
